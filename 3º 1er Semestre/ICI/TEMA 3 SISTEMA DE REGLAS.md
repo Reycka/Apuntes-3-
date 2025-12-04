@@ -1,0 +1,39 @@
+- Una base de datos/hechos/conocimiento con información del problema
+- Un conjunto de reglas (operadores)
+- Una estrategia de control
+- Un aplicador de reglas
+- Arquitectura:
+	- 1º Reconocimiento:
+		- Comparamos los patrones en las reglas con los elementos de la memoria de trabajo
+	- 2º Resolución de conflictos: Se elije una regla entre las satisfechas por la memoria de trabajo y se ejecuta para entonces
+	- 3º Ejecución Se ejecutan las reglas que dan lugar a cambios en la memoria de trabajo (se pueden añadir unas nuevas reglas)
+	- SI CONDICIONES ENTONCES ACCIONES
+	- Estas reglas son independientes unas de otras
+- Reglas:
+	- Parte Izquierda (LHS)
+		- Patrón o condición que determina la aplicabilidad de la regla
+	- Parte Dereha (RHS)
+		- Descripción de la operación o acción a llevar a cabo al aplicar el operador
+	- En caso de haber la posiblidad de escoger varias ideas, se debe de escoger una prioridad a las mismas
+	- Tipos de razonamientos:
+		- Encadenamiento Progresivo (hacia adelante), utilizar las reglas para aplicar algo
+		- Encadenamiento Regresivo Utilizar las reglas para reconocer algo
+- Motor de Inferencia:
+	- Algoritmo RETE
+		- Orden...
+		- Prioridades...
+		- Especificidad...
+		- Novedad...
+- Lenguaje Clips:
+	- Librería JESS de Java
+	- Asertar un hecho:
+		- se usa assert
+		- Se inicializan como en un lenguaje base
+	- Se trata como un struct
+	- Se asigna un nombre a cada elemento
+	- Sintaxis: deftamplate <nombre> comentario <definicion-slot>*
+
+
+- IMPORTANTE:
+	- LOS BOOL DEL CLP SE DEBEN COMPARAR EN LA DECLARACION, NO SE PUEDEN GUARDAR VARIABLES DEL TIPO ?b true y que este compare
+	- A LA HORA DE PASAR LOS MOVIMIENTOS SALTABA EXCEPCION PORQUE  LOS MOVIMIETNOS ERAN NULLPTR Y SALTA 0

@@ -1,0 +1,21 @@
+- CONJUNTOS DISJUNTS
+
+- ![[Pasted image 20251020201223.png]]
+- GRAFOS VALORADOS:
+	- Identicos a los grafos pero ahora hay una clase Arista que almacena los puntos que une y el valor que estos poseen
+	- Se trabaja recorriendo las aristas ya que estos almacenan toda la información que me interesa
+	- La forma de agregar aristas ya no es un unir 2 puntos concretos si no que se añade a su vez el valor entre ambos
+	- A nivel de costes es igual que los grafos normales
+- Árbol de Recubrimiento:
+	- Es de recubrimiento es un subgrafo tal que dicho subgrafo recorre  todos los nodos de G 
+	- Es un árbol si  no tiene ciclos y además es conexo,
+	- Un árbol es de recubrimiento si cumple ambos casos anteriores
+	- PROPIEDADES:
+		- Si es arbol de recubrimiento entonces:
+			- Vertices de T = vertices de G -1
+			- Si quito un vertice ya no es conexo
+			- Si añado un vertice se crea un ciclo
+			- Propiedad del corte: Indica una arista que conecta 2 vertices de arboles diferntes, indica que la de menor valor es la que pertenece al ARM
+	- ![[Pasted image 20251020205853.png]]
+
+	- ![[Pasted image 20251020205909.png]]

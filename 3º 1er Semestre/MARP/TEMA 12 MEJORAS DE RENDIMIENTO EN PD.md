@@ -1,0 +1,20 @@
+- MULTIPLICACIÓN DE LAS MATRICES:
+	- Es importante saber que la forma de multiplicar las matrices varía, por lo que dependiendo de la forma que usemos para multiplicar esas matrices tendremos que hacer más o menos multiplicaciones, para ello usamos los paréntesis para dar prioridad 
+	- ![[Pasted image 20251201003822.png]]
+	- Las matrices de i j almacenan el número de multiplicaciones que se han usado para sacar dicho valor
+	- ![[Pasted image 20251201004224.png]]
+	- La tabla es de tamaño nxn donde n es el número de matrices a multiplicar y la diagonal siempre vale 0
+	- La tabla se puede recorrer en cualquier orden y para acceder a la matriz se pilla el elemento en i que es el número por el que preguntamos y el elmento j que es el punto del que parte la diagonal, y de ahi se le va sumando 1,
+	- Siempre se cumple que el total de elementos de la diagonal es de n - d
+	- ![[Pasted image 20251201004607.png]]
+	- ¿RECONSTRUCCION?
+	- Su complejidad es del orden de O(n^3) en tiempo y O(n^2) en espacio
+	- ![[Pasted image 20251201004919.png]]
+	- La reconstrucción es lineal en el coste de O(j - i)
+	- ![[Pasted image 20251201005038.png]]
+- JUSTIFICACIÓN DE UN TEXTO
+	- Tenemos una Longitud L máxima que pueden ocupar los caracteres 
+	- Una forma de arreglar esto es a través de la asignación de espacios en blanco entre las palabras para ocupar ese tamaño, no obstante buscamos penalizar esos espacios en blanco A EXCEPCIÓN DE LA ÚLTIMA que no cuenta 
+	- ![[Pasted image 20251201175348.png]]
+	- ![[Pasted image 20251201175647.png]]
+	- Existe otra forma de trabajar con este problema que comprueba linea por linea en lugar de palabra por palabra

@@ -1,0 +1,42 @@
+- La partícula se define con un estado y una dinámica, siendo el estado la diferencia de la posición en función de la velocidad y la dinámica sería la diferencia de velocidad en función de la aceleración, véase, la dinámica cambia el estado, esto se aplica solo para la s partículas, ya que el resto de sólidos rígidos poseen estados y dinámicas diferentes
+- En los sólidos rígidos el estado se define con una posición en función de la velocidad, pero añadiendo un Cuaternion que indica la orientación de mi sólido rígido, del mismo modo ahora también tenemos una velocidad angular que indica la velocidad con la que gira algo 
+	- Los cuaterniones se usan ya que tanto a nivel matemático como computacional son mejores que sus alternativas (como la matriz de orientación) 
+	
+-  CENTRO DE MASA:
+	- Es el punto en donde si yo hago fuerza en ese punto solo se desplaza, mientras que si se aplica en otro lado el cuerpo rotara
+	- La masa del objeto será la suma de todos los puntos con masa de mi objeto
+- PARES (T) T = F * d (donde d es la distancia)
+
+
+- IMPLEMENTACIÓN:
+	-  Igual que una partícula pero ahora con solidos rigidos
+	- Tener un solidForceGenerator y un solidGenerator 
+	- Existen 2 tipos de spñodps rigidos:
+		- Estáticos: Son fijos, vease son estáticos
+		- Dinámicos: Pueden cambiar su posición, su aceleración, velocidad...
+			- Se debe de definir la inercia de estos objetos 
+- COLISIONES:
+	-  Los resultados de los momentos son la velocidad que toman los valores tras colisionar unas con otras, para calcular los momentos se utiliza esta formula:
+		-  gA = -gB = [(Vao-Vaf) * (C+1)] / (1/ma + 1/mb)
+		- La C es la constante que permite a los objetos desplazarse
+	- La comprobación de colisiones es extremadamente costosa por lo que existen técnicas para reducir esto
+		- 1º Reducir la cantidad de parejas de objetos a comprobar y simplificar las formas de los objetos para disminuir el número de posibles colisiones
+		- 2º Generar algoritmos de división espacial que comprueban los objetos cercanos con los que tengo que comprobar
+	- ALGORITMOS DE DIVISIÓN:
+		- Broad Phase: Elimino colisiones muy claras de forma sencilla
+			- Se basa en la división de un espacio en zonas
+			- Puede definir colisiones que no sean colisiones pero no eliminarlas
+			- Formas:
+				- Se colocan los objetos sobre uno de los ejes y se pregunta si algún objeto se superpone sobre ese eje significa que PUEDE haber colisión, por lo que no se descarta
+				- Dividir el espacio en zonas (como si de una cuadrícula se tratase), si hay algún objeto en la misma otra que zona PUEDE haber colisión entre ellas
+					- QuadTrees:
+						- Por cada división que hay, se generan otras 4 divisiones, así hasta la mayor cantidad de subDivisión que definas, a mayor subdivisión mayor precisión, no obstante muchas veces no hace falta llegar a tanto
+						- Del mismo modo se puede ajustar para que las subdivisiones solo se generen cuando hay objetos muy cercanos (if Divide => 2 objetos)
+						- Cada nivel es una división
+						- Se usa principalemnte en 2D pero también se puede usar en 3D
+					- Octrees:
+						- Igual que QuadTrees pero ahora hay más subdivisiones ya que se trabaja en 3D 
+		- Narrow Phase: Una vez que elimino las colisiones claras, realizo los cálculos de detección complejos con el resto de entidades no descartadas
+			- Se simplifican las formas a través de cuadrados, que permite facilitar los cálculos (la hitbox de toda la vida)
+				- Esferas, AABB, OBB, Convex Hull, están ordenadas de más ráìdas a menos y de menos precisas a mas 
+				- Se pueden dividir los objetos por niveles (los valores por hitbox), de forma que tenemos una caja que engloba a mi objeto si hay otro objeto dentro de esa caja compruebo con el resto de subcategorías para ver con que colisiona

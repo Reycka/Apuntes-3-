@@ -1,0 +1,22 @@
+
+- PROBLEMA DE LA MOCHILA:
+	- Se aplica cuando no puedes partir los objetos 
+- ALGORITMO DE FLOYD
+	- Se usa por encima de Dijkstra si el grafo tiene pesos negativos o si este no es disperso, ya que en ese caso Dijkstra no nos sirve ya que el coste del algoritmo pasaría a ser cúbico tanto en espacio como en tiempo
+	- La diagonal principal de la Matriz solo tiene 0 porque no hay autoaristas
+	- ![[Pasted image 20251130165656.png]]
+	- En lugar de ir recorriendo del punto i al punto j del todo se limita el tamaño hasta k de forma que se sabe que si o si el camino de i a j pasa por k
+	- ![[Pasted image 20251130165840.png]]
+	- En este caso la forma de buscar el camino del punto a i al punto j tiene 2 posiblidades, aquellos que pasan por k y aquellos que no, la forma de representarla es la siguiente
+	- La solución al C^k (i,j) será el minimo entre C^k-1 (i,j) y C^k-1 (i,k) + C^k-1 (k,j)
+	- ![[Pasted image 20251130170121.png]]
+	- La matriz tiene un total de 3 dimensiones, siendo estas la i, la j y la k ya que es necesario comprobar que puntos de esos 3 conectan unos con otros
+	- Este espacio se puede optimizar para pillar únicamente 2 matrices, la de k-1 que es la anterior y que ya está rellena y la de k que es la actual que se va rellenando en función de la anterior
+	- Como C [k]  [k]  es 0 no importa en que orden se recorra para rellenar la matriz 
+	- ![[Pasted image 20251130170732.png]]
+	- ![[Pasted image 20251124230453.png]]
+	- En tiempo es Cúbico y en espacio constante
+	- ![[Pasted image 20251124230517.png]]
+	- ![[Pasted image 20251124230553.png]]
+	- Tambien se usa para comprobar si hay ciclos negativos
+		- ![[Pasted image 20251124230644.png]] 

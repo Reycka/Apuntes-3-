@@ -1,0 +1,30 @@
+- Cada sistema de partículas tiene su generador asociado
+- PASOS:
+	- 1º Generación de nuevas partículas 
+	- 2º Asignación de atributos aleatorios:
+		- Posición Inicial
+		- Velocidad inicial
+		- Tiempo de vida
+		- Color
+		- Tamaño
+		- Transparencia
+	- 3º Extinción de las partículas muertas
+		- Aquellas cuyo tiempo de vida sea <= 0 
+		- Aquellas que se salgan de mi punto de interés
+		- Si superamos el número máximo de partículas
+		- Color y trasparencia por debajo del umbral
+	- 4º Movimiento de las partículas vivas
+	- 5º Renderización
+- ¿Cuántas hago?
+	- 1º Podemos controlar el número medio de partículas: Nparts = MeanParts + rand() * VarParts
+	- 2º El número de partículas depende del tamaño de pantalla del objeto:
+		- NPartsf = (MeanPartsf + rand() * VarPartsf) * ScreenArea 
+- Formulas iniciales:
+	- Vi = Vs * Prob
+	- Ángulo alpha = alpha_m * Prob
+	- v = (vi * senalpha, vi* cosalpha)
+- Requisitos:
+	- Meter las partículas a un vector
+	- Origen
+	- Velocidad media
+	- Número de partículas que genera en cada llamada
