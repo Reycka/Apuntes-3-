@@ -1,0 +1,39 @@
+- Ramificación y Poda:
+	- Se utiliza cuando ningún algoritmo es capaz de devolver la mejor solución a un problema, y la poda es una forma que tiene este algoritmo de eliminar los casos que se saben que no van a ser soluciones factibles, un ejemplo es el backtracking
+	- Cada solución posible se la trata como una n-tupla las cuales deben de cumplir una serie de criterios/restricciones, destacando 2 tipos:
+		- Explícitas: Indican los conjuntos Si
+		- Implícitas: Relaciones entre las componentes de la tupla solición, basicamente las reglas que debe seguir a la hora de probar la solución
+	- Se almacenan en forma de árbol de exploración donde se va recorriendo la mejor tupla al que se puede llegar desde la n-tupla actual 
+	- Se explora el árbol de forma recurisva dando todas las soluciones para un valor, luego para otro y asi sucesivamente hasta llegar a un resultado o hasta podarlo, BACKTRACKING:
+	-  En poda se va avanzando en función del más prometedor
+	- Este algoritmo se usa en esencia en problemas de optimización que permitan tener un estimado del valor esperado y compararlo con la tupla solución que tengo, si el estimado no mejora esa solución no se sigue avanzando por ahí
+		- Es importante tener en cuenta las funciones de coste_estimado y coste_real donde si ese coste_estimado es menor o mayor dependiendo del problema (min or max) se debe eliminar esa opcion
+		- ![[Pasted image 20251208205408.png]]
+		- Los costes dependen del problema por lo que no son fijos
+		- Se utiliza una cola de prioridad como estructura auxiliar del caso
+	- Ejemplo de problema, calculo del coste de tareas
+	- ![[Pasted image 20251208210630.png]]
+
+	- K representa el valor anterior y sol la tupla de 0 a k
+	- ![[Pasted image 20251208210741.png]]
+	- Calcula la solución estimada si seguimos tirando por ese nodo
+	- ![[Pasted image 20251208210858.png]]
+	- ![[Pasted image 20251208211028.png]]
+	- ![[Pasted image 20251208211047.png]]
+	- Inicilmente se crea una cola a la que se le pasa el nodo padre Y que es el primer valor en cuestión
+	- En el bucle se va recorriendo para cada valor de la cola al que se le añade el hijo izquierdo del actual y el derecho siempre que cumplan con las condiciones de optimización y demás
+
+
+- Árboles de Juego:
+	- Representan todos los posibles estados encontrados en una partida
+	- Se utiliza el algoritmo min max, siendo la representación quedandose en el caso de ser el turno del rival con el menor valor de los nodos mientras que si es el turno del jugador 1 se evalua con el máximoç
+	- ![[Pasted image 20251208215655.png]]
+	- Juego de los palillos
+	- Los valores se preguntan en postOrden
+	- ![[Pasted image 20251208220225.png]]
+	- Destacamos la poda alpha beta, la cual consiste en como el arbol se recorre en postOrden nosotros sabemos que al quedarnos con un máximo nos quedamos con el valor mayor de los hijos por lo que si hay un hijo con un valor menor al de otro se sabe que ese resultado no afecta (alpha) y lo mismo ocurre para los minimos pero al reves (beta)
+	- ![[Pasted image 20251208220402.png]]
+	- ![[Pasted image 20251208220413.png]]
+	- Los recorridos se hacen con la función Heuristica que determina la mejor jugada desde que empieza el juego
+	- EJEMPLO PODA MIN MAX
+	- ![[Pasted image 20251208220753.png]]
