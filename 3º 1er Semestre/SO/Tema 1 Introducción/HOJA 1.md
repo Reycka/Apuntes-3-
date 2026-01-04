@@ -1,3 +1,4 @@
+y
 atoi(argv[1]) parsear el argumento a entero.
 - LA LÍNEA DE COMANDOS
 
@@ -59,6 +60,7 @@ atoi(argv[1]) parsear el argumento a entero.
 - MANEJO DE CADENAS Y FLUJOS DE CARACTERES
 
 	- **Ejercicio 1 y 2. Estudiar el comando sort (man sort). Ordenar las palabras: zorro, pájaro, vaca, caballo y abeja,  imprimiendo cada una en una línea (\n) con el comando echo y encadenando su salida (tubería ‘|’) con el comando sort.**
+		- No hace falta crear ningún archivo, se puede usar una tubería | para permitir la ordenacion, se hace echo -e "Los nombres en cuestion" | sort y te lo ordena
 		- 1º Creamos el archivo Animales.txt
 			- Para ello utilizamos echo -e ("texto") > "Nombre de archivo" el cual crea el archivo con el nombre de archivo en el que dentro se encuenetra texto (-e se usa para permitir el salto de linea con "\n" , > indica que borre el interior de ese archivo entero o lo cree)
 		- 2º Utilizamos sort para ordenar texto
@@ -138,6 +140,7 @@ atoi(argv[1]) parsear el argumento a entero.
 	- **Ejercicio 3. La opción size permite buscar por tamaño con los modificadores c, b, k, M y G. Si se antepone + al tamaño se seleccionen ficheros mayores, con - se seleccionan ficheros más pequeños Buscar ficheros mayores de 10M en el sistema.**
 		- 1º Se escrube sudo find /home -type f  -size +10M
 			- Las letras corresponden al tamaño de los archivos en bytes
+			  ![[Pasted image 20251225224743.png]]
 
 - REDIRECCIONES, TUBERÍAS Y EXPRESIONES REGULARES
 	- **Ejercicio 1. Ejecutar en el directorio $HOME el comando ls -l text* nada* > salida. ¿Qué sucede?, ¿cuáles son los contenidos del fichero salida?. Con el comando anterior redirigir la salida estándar a salida.out y la salida estándar de error a salida.error.**
@@ -156,6 +159,10 @@ atoi(argv[1]) parsear el argumento a entero.
 		- 3º Si en concreto tienen que ser la última se hace = pero se escribe 'patron$'
 		- 4º Si en lugar de eso buscamos algo entre 2 letras (a a) en 'patron' escribimos 'a.a'
 		- 5º Si buscamos algo que tenga de x a y caracteres necesitamos usar grep -E 'al{1,2}o' texto1.txt siendo 1 el valor de x y 2 el valor de y, en este caso busca de 1 a 2 l (todo lo que acabe en alo o allo)
+		- 6.1 grep -e "ja" texto1.txt
+		- 6.2 grep -e "ja$" texto1.txt
+		- 6.3 grep -e "a.a" texto1.txt
+		- 6.4 grep -e "al * o" texto1.txt
 		
 - PROGRAMACIÓN EN LENGUAJE SHELL 
 	- **Ejercicio 1.  Argumentos de un programa. Escribir un script que muestre el nombre del fichero del script ($0), el primer ($1) y segundo ($2) argumento, cada uno en una línea. Además la variable $# contiene el número de argumentos y $@ sirve para referirse a todos.** 
@@ -164,7 +171,9 @@ atoi(argv[1]) parsear el argumento a entero.
 		- 3º Ya creado el script nos ubicamos en su directorio con cd
 		- 4º Damos permisos de ejecución con chmod +x Nombre del sh
 		- 5º Abrimos el sh con ./Nombre del sh ARGUMENTO1 ARGUMENTO2....
-		
+		![[Pasted image 20251226191952.png]]
+
+
 	- **Ejercicio 2. Sentencias Condicionales. Escribir un programa que acepte exactamente un argumento. Si no es así debe terminar con código 1 y mostrar el mensaje correspondiente. El argumento se interpretará como una ruta. Si la ruta es un fichero regular (ver man bash, sección CONDITIONAL EXPRESSIONS), el script mostrará el número de líneas que tiene.  Nota: La ejecución de un programa se puede asignar a una variable que guardará la salida estándar. Además el comando cut puede ser útil para separar una cadena y seleccionar un campo.** 
 	
 		-  1º Se crea el script
@@ -175,12 +184,14 @@ atoi(argv[1]) parsear el argumento a entero.
 			- else 
 				- QUE HAGO
 			- fi 
+		![[Pasted image 20251226193454.png]]
 		
 	- **Ejercicio 3. Bucles. Escribir un script shell que itere por cada fichero de un directorio dado (argumento del script) y  si es un fichero regular muestre en un línea el nombre y el  número de palabras. Nota: Para realizar un número de iteraciones dado se puede usar la forma C (ver manual de bash) o el comando seq.**
 		-  1º Creo un script de bash que recibe un argumetno que es el directorio IMPORTANTE ES EL $1, $0 corresponde al nombre del script
 		-  2º Creo un bucle for que recorra para cada fichero de dir
 		-  3º Comrpuebo con un if si cumple la condición para escribir, en caso de hacerlo uso el echo
 		- 4º Ejecuto en consola, le paso un directorio . si es el actual ../ etc etc
+		- ![[Pasted image 20251226195343.png]]
 		
 	- **Ejercicio 4. Funciones. Para escribir una función en bash se usa la siguiente sintaxis. Probar la ejecución del siguiente script. ¿Qué valor se almacena en la variable A?** 
 		- 1º Creo un script de bash que almacena la función:
@@ -190,5 +201,27 @@ atoi(argv[1]) parsear el argumento a entero.
 		- 3º Asigno un argumento A=lo escrito en el paso 2
 		- 4º Pido que imprima el valor de A (ahora si con $ delante)
 		- 5º Ejecuto el programa en bash
+		- ![[Pasted image 20251226200245.png]]
+		- El resultado es Hola mundo (Se ejecuta la función hola)
 		
 - PRÁCTICA AGENDA
+	- 1º Creamos el script de Bash
+	- 2º Creamos el archivo agenda.txt donde guardaremos los datos
+	- 3º En el Script ejecutaremos los comandos típicos para comprobar que las cosas se han pasado bien y que el archivo sea válido
+	- 4º En la función lista utilizamos el comando read que funciona de la siguiente manera:
+		- read - r  VAR1 VAR2 VAR3... hasta todas las variables de la línea de forma que podemos pillar todos los contactos de esa agenda
+		- ![[Captura de pantalla_20251227_203331.png]]
+	- 5º Para la función de buscar se usa un grep -e con el Nombre a buscar  
+		- ![[Pasted image 20251227205227.png]]
+	- 6º Para el remove y el añadir se usan el comando sed -i  y la tubería >> respectivamente
+		-  ![[Pasted image 20251227205308.png]]
+	- 7º Ejecución principal:
+		- ![[Pasted image 20251227205332.png]]
+-  API DEL SISTEMA OPERATIVO:
+	- Ejercicio1: 
+	- Basicamente te indica con el comando gcc - g -o error ./Ejercicio.c que warnings y errores tienes y donde, perfecto para depurar
+	- La forma de arreglarlo es hacer la función void y cambiar el puntero a pelo entre otras opciones
+	- ![[Pasted image 20251227210740.png]]
+- GESTION DE ERRORES:
+	- Son todos los if elif que tengo en los ejercicios anteriores (Comprobar si el archivo existe, que no este vacío, que sea válido)
+	- Toda esta información está en el bash man en la sección de Conditional Expressions

@@ -11,13 +11,13 @@
 		- Esos números a su vez contienen información de suma importancia como el segmento de código al que se asocian asi como el lugar en memoria donde se ha guardado ese código (por ejemplo en el ordenador del lab el msg se me ha guardado en el 03 que equivale a un LOAD y los .data y .bss se me han guardado en 04, cosa que varía en función del dispositivo OBVIAMENTE)
     
 	
-|          |                          |                 |                 |       |
-| -------- | ------------------------ | --------------- | --------------- | ----- |
-| Segmento | Código C correspondiente | Offset          | Dir.virtual     | Flags |
-| .text    | mul *= factor printf()   | 0x0000000001000 | 0x0000000001000 | R E   |
-| .rodata  | msg                      | 0x0000000002000 | 0x0000000002000 | R     |
-| .bss     | mul                      | 0x0000000002db0 | 0x0000000003db0 | R W   |
-| .data    | num, factor              | 0x0000000002db0 | 0x0000000003db0 | R W   |
+|          |                          |        |             |       |
+| -------- | ------------------------ | ------ | ----------- | ----- |
+| Segmento | Código C correspondiente | Offset | Dir.virtual | Flags |
+| .text    |                          |        |             |       |
+| .rodata  |                          |        |             |       |
+| .bss     |                          |        |             |       |
+| .data    |                          |        |             |       |
 
 - Ejecutar ahora el programa y obtener los segmentos de memoria virtual accediendo al fichero maps del directorio del proceso en /proc. Nota: Se puede identificar la correspondencia de los segmentos del ejecutable y los segmentos de memoria virtual comparando el camp offset y los flags:
 
@@ -26,19 +26,19 @@
 - Heap es el lugar donde se almacena la memoria dinámica (todo lo que ponga en Dynamic)
 	- NOTA: LAS DIRECCIONES NO COINCIDEN YA QUE AL REHACER EL PROGRAMA POR EL REINCIO DEL PC LAS DIRECCIOENES SE HAN MODIFICADO
 
-|          |                                      |                    |       |                           |                                       |
-| -------- | ------------------------------------ | ------------------ | ----- | ------------------------- | ------------------------------------- |
-| Segmento | Rango de direcciones virtuales       | Offset del fichero | Flags | Tipo map/anónimo          | Ruta del fichero                      |
-| .text    | 00005555555555000-00005555555555FFF  | 4K                 | r x   | Compartida con Ejercicio1 | /home/hlcoal/workspace-jee/Ejercicio1 |
-| .rodata  | 00005555555556000-00005555555556FFF  | 4K                 | r     | Compartida con Ejercicio1 | /home/hlcoal/workspace-jee/Ejercicio1 |
-| .bss     | 00005555555558000-00005555555558FFF  | 4K                 | rw    | Compartida con Ejercicio1 | /home/hlcoal/workspace-jee/Ejercicio1 |
-| .data    | 00005555555558000-00005555555558FFF  | 4K                 | rw    | Compartida con Ejercicio1 | /home/hlcoal/workspace-jee/Ejercicio1 |
-| [heap]   |                                      |                    |       |                           |                                       |
-| [stack]  | 00007ffff7ffdd000-00007ffff7ffeffff- | 136K               | x     | Compartida con pila       | pila                                  |
+|          |                                |                    |       |                  |                  |
+| -------- | ------------------------------ | ------------------ | ----- | ---------------- | ---------------- |
+| Segmento | Rango de direcciones virtuales | Offset del fichero | Flags | Tipo map/anónimo | Ruta del fichero |
+| .text    |                                |                    |       |                  |                  |
+| .rodata  |                                |                    |       |                  |                  |
+| .bss     |                                |                    |       |                  |                  |
+| .data    |                                |                    |       |                  |                  |
+| [heap]   |                                |                    |       |                  |                  |
+| [stack]  |                                |                    |       |                  |                  |
 
 - Nota: Alternativamente, el programa pmap(1) puede utilizarse para consultar la información sobre los segmentos de memoria (misma información que proc/pid>/maps)
 
-- Cuestiones:
+	- Cuestiones:
 
 	- En qué segmento(s) de memoria virtual está la cadena "El resultado es:\n". Los contenido del segmento de memoria virtual se puede acceder en el directorio del proceso /proc/pid proceso>/map_files/rango del segmento>. Comprobar que la respuesta es correcta con el comando strings(1).
     

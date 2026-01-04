@@ -5,6 +5,7 @@
 - Mostrar todos los procesos del usuario actual en formato extendido. (Nota: usar la variable de entorno USER).
 	- Accediendo al manual encontramos una parte donde nos habla de  las formas de uso de ps, utilizando ps ax y ps axu se saca el formato extendido 
 	- Para acceder a user se hace -u
+	- Se usa la opción -l -a -u $USER -f da toda la informacion de USER en formato extendido
 	
 - Mostrar los procesos del sistema, incluyendo el identificador del proceso, el identificador del grupo de procesos, el identificador de sesión, el estado y el comando con todos sus argumentos.
 	-  El odemtificador de grupo el PID del proceso mientras que el identificador del proceso igual ya que la terminal lo asocia por defecto, el identificador de sesión es el start y el del estado es stat
@@ -29,19 +30,43 @@
 		- getsid(getpid())
 		- getuid()
 		- getcwd(NULL,0)
+		- ![[Pasted image 20251231192345.png]]
  
 - Ejercicio3: teniendo "12345" > /proc/$ $/fd/1 ¿Cual es el output?
 	-  Crea o machaca el archivo 1 escribiendo 12345 en la ruta marcada por proc $ $ fd --> donde $ $ es el argumento de la ruta que le pasamos. Si la ruta no existe debería controlar el error
+
+
+- **Ejercicio 4. Consulta el tipo de fichero y contenido de los siguientes ficheros del proceso de la shell actual (/proc/ $ $) completa la siguiente tabla:**
+	- Para acceder al sistema de ficheros que es proc basta con estar en la raiz y hacer cd proc/$ $ --> El cual apunta al proceso actual
+	- ALGUNAS DE LAS DESCRIPCIONES SE ENCUENTRAN EN EL MAN
+
+|         |                             |                                                                     |
+| ------- | --------------------------- | ------------------------------------------------------------------- |
+| Fichero | Tipo<br><br>enlace, dir,... | Descripción<br><br>contenido/propósito                              |
+| cmdline | fichero regular vacío       | Como se inicializa el proceso                                       |
+| cwd     | enlace simbólico            | Apunta al directorio de trabajo actual del proceso.                 |
+| environ | fichero regular vacío       | Contiene las variables de entorno del proceso.                      |
+| exe     | enlace simbólico            | Apunta al archivo ejecutable del proceso                            |
+| fd      | directorio                  | Contiene enlaces simbólicos a los descriptores de archivo abiertos. |
+| limits  | Fichero regular vacío       | Muestra los límites del proceso                                     |
+| maps    | fichero regular vacío       | Distribución de la memoria del proceso actual                       |
+| root    | Enlace simbólico            | Da acceso a la raíz del sistema de archivos                         |
+
+
 
 # CREACIÓN Y GESTIÓN DE PROCESOS
 
 - Ejercicio 5.  Escribir un programa que cree un proceso hijo con las siguientes características:
 - El programa recibirá dos argumentos en la forma:  ./ejercicio5 <segundos_padre> <segundos_hijo>
+	- Se gestiona el error con args averiguando si es que estos son el número adecuado (2 por lo que args tiene que ser 3)
+	- Se usa atoi para parsear el tiempo a int
 
 - El hijo creará su propia sesión, imprimirá sus identificadores (como en el Ejercicio 2), esperará segundos hijo (segundo argumento) con la llamada sleep(3); y terminará.
-    
+    - IMPORTANTE: El padre ya existe, es el proceso que se crea al iniciar el programa, por eso el fork hace un hijo de este proceso
+    - Para los parámetros del hijo no se usa el pid que genera el fork, se usan los métodos getpid,getpgid... PORQUE TOMAN EL PROCESO ACTUAL QUE EN EL CASO DE CREAR EL HIJO ES EL HIJO
 - El padre imprimirá sus identificadores (Ejercicio 2), esperará segundos padre (primer argumento) con la llamada sleep; y terminará.
-    
+	- ![[Pasted image 20251231201414.png]]
+	    
 
 Ejemplo de salida:
 
@@ -59,13 +84,13 @@ Considera las siguientes ejecuciones, observa los procesos con la orden ps -lHu 
 
 **
 
-|   |   |   |   |
-|---|---|---|---|
-|Orden|Proceso PID|PPID, CMD ( padre)|Estado|
-|./eje5 600 1&||||
-||||
-|./eje5 1 600&||||
-||||
+|               |             |                    |                                                            |
+| ------------- | ----------- | ------------------ | ---------------------------------------------------------- |
+| Orden         | Proceso PID | PPID, CMD ( padre) | Estado                                                     |
+| ./eje5 600 1& | 5934        | 5933               | Z                                                          |
+|               | 5933        | 5012               | S                                                          |
+| ./eje5 1 600& | 5812        | 5811               | S (se queda huerfano y es adoptado por el padre del padre) |
+|               | 5811        | 5309               | Z                                                          |
 
 
 
@@ -76,39 +101,147 @@ NOTA: no todas las filas son necesarias
 Explica razonadamente el estado de los procesos en el primer caso (el hijo termina antes) y el PPID de los procesos en el segundo caso (el padre termina antes), identifica el proceso padre con la ayuda del comando ps(1).
 
 Ejecuta el programa con un tiempo de espera largo (ej. ./eje5 60 60), antes de que terminen las llamadas a sleep(3) presiona Ctrl-C en el terminal. ¿Qué ocurre? ¿Mueren ambos procesos? ¿Por qué?
+	- Los procesos terminan su ejecución y la llamada a sleep se cancela
 
+- **💻Ejercicio 6. kill(1) permite enviar señales a un proceso o grupo de procesos por su identificador (pkill(1) permite hacerlo por nombre de proceso). Estudiar la página de manual y las señales que se pueden enviar a un proceso.**
+	- Se pasa el comando la señal y el PID  kill -signal pid
+	- Si le agrego un - al pid es para indcar el gripo del proceso	
+- **💻Ejercicio 7. En un terminal, arrancar un proceso de larga duración (ej. sleep 600). En otra terminal, enviar diferentes señales al proceso (terminar, interrumpir, parar, continuar) y comprobar el comportamiento.** 
+	- ![[Pasted image 20260102180000.png]]
+- **Ejercicio 8. Determina las opciones adecuadas para el comando kill(1) para terminar (SIGINT) los dos procesos que se crean en la ejecución del programa del ejercicio 5.**
+	- En una terminal ejecuto el proceso, esa terminal está trabajando ese proceso por lo que necesito otra terminal distinta para parar el otro proceso
+	- En la otra terminal ejecuto el comando kill -SIGINT -PGID para forzar la detención del programa (como si de un ctrl  C se tratase)
+	
+- **💻Ejercicio 9 Escribir un programa que ejecute otro programa (ejecutable y argumentos) que se pasará como argumento. El programa creará un proceso hijo que ejecutará el programa dado en el argumento con la función execvp(3). El proceso padre esperará que termine el hijo e imprimirá su código de salida. Ejemplos de ejecución:**
+	- ![[Pasted image 20260102185741.png]]
+	- ![[Pasted image 20260102185828.png]]
 
-**💻Ejercicio 9 Escribir un programa que ejecute otro programa (ejecutable y argumentos) que se pasará como argumento. El programa creará un proceso hijo que ejecutará el programa dado en el argumento con la función execvp(3). El proceso padre esperará que termine el hijo e imprimirá su código de salida. Ejemplos de ejecución:**
+	- Nota: Considerar cómo deben pasarse los argumentos en cada caso para que sea sencilla la implementación. Por ejemplo: ¿qué diferencia hay entre: ./eje9 ps -el y ./eje9 "ps -el"?
+		- Uno lo trata como toda la pila de procesos de ps y el otro como el texto ps -el
 
-$ ./eje9 cat /etc/passwd
+- **Ejercicio 10  Dibuja el esquema jerárquico de los procesos creados en la ejecución del siguiente programa con argc=3:
 
-root:x:0:0:root:/root:/bin/bash
+void main(int argc, char *argv[])
 
-daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+{
 
-…
+    int i;
 
-El proceso hijo terminó con código de salida 0
+    for(i=1; i<=argc; i++)
 
-$ ./eje9 cat /etc/shadow
+    {
 
-cat: /etc/shadow: Permission denied
+        pid_t pid = fork();
 
-El proceso hijo terminó con código de salida 1
+        ...
 
-  
+    }
 
-$ (./eje9 sleep 3600&) ; sleep 1 ; pkill -SIGKILL sleep
+    return 0;
 
-El proceso hijo terminó por señal 9
+}
 
-Nota: Considerar cómo deben pasarse los argumentos en cada caso para que sea sencilla la implementación. Por ejemplo: ¿qué diferencia hay entre: ./eje9 ps -el y ./eje9 "ps -el"?
-
-**
+- Respuesta:
+	- El esquema es: 
+		- 1ª iteracion: Padre -> Hijo1; Hijo1 -> Hijo2; Hijo2->Hijo3
+		- 2ª iteración el padre sigue: Padre-> Hijo2; Hijo2 -> Hijo3
+		- 3ª iteración el padre sigue: Padre -> Hijo3
+	
 - Ej 11: 
 	- Se debe de abrir el archivo  
 	- Se usa el comando write(int FileDoc,buffer[],bufferSize * typeSize)
 	- Los ficheros siempre empiezan en el 0 en cuanto a bytes independientemente de la cantidad de bytes ya ocupadas, se usa lseek
+	- IMPORTANTE: Siempre que un hijo tiene que hacer algo se debe hacer un wait al padre con el do while que esta en el man de wait porque si no eso empieza a ir por libre (sin el wait el padre se puede ejecutar más de una vez y es liada), del mismo modo si un hijo termina se le hace un exit para que pase a estado zombie
+	- ![[Pasted image 20260102200630.png]]
+	- ![[Pasted image 20260102200718.png]]
+	- **Ejercicio 12 Considera el programa descrito en el Ejercicio 11. Dado que la tabla de descriptores se hereda ¿Es posible usar el descriptor de fichero abierto por el padre en los hijos?
+		- La respuesta es que sí ya que la tabla de descriptores almacena todos los archivos que tuviera el padre almacenados y si el padre abrió/desplazó algún byte eso se ve reflejado en la tabla de descriptores del hijo que es un puntero a la del padre
+	- **Ejercicio 13 Considere el código que se muestra a continuación:
+
+int global;
+
+void main() {
+
+    int   local=3;
+
+    pid_t pid;
+
+  
+
+    global=10;
+
+    pid = fork();
+
+    if (pid == 0 ) {
+
+        global = global + 5;
+
+        local  = local + 5;
+
+    }
+
+    else {
+
+        wait(NULL);
+
+        global += 10;
+
+        local  += 10;
+
+    }
+
+    printf(“global:%d local:%d\n”, global, local);
+
+} 
+
+- Determine qué mensajes se imprimirán en la terminal. ¿Es posible que el resultado de la ejecución del programa cambie según el orden en que se ejecuten los procesos padre e hijo?. Nota: suponer que todas las llamadas al sistema se ejecutan exitosamente.
+	- 1º El proceso padre espera al hijo (global = 10 local = 3)
+	- 2º El proceso hijo suma 5 a global y a local (global = 15 y local = 8), como no hago exit el proceso sigue hasta llegar al printf por lo que imprime los valores que son 15 y 8
+	- 3º Al terminar el hijo le toca al padre que suma 10 a global y local que pasan de valer 10 y 3 a 20 y 13 respectivamente siendo estos los valores que imprime
+	- Los valores no cambian ya que el wait obliga al padre a esperar al hijo y tanto el global como el local no cambian
+- **Ejercicio 14 Considere el código que se muestra a continuación:
+
+int a = 3;
+
+void main() {
+
+    int b=2;
+
+    for (i=0;i<4;i++) {
+
+        pid_t p=fork();
+
+        if (p==0) {
+
+            b++;
+
+            execlp("/usr/bin/sleep", “/usr/bin/sleep”, “2”, NULL);
+
+            a++;
+
+        }
+
+        else {
+
+           wait(NULL);
+
+           a++;
+
+           b--;
+
+        }
+
+    }
+
+    printf(“variables - a:%d b:%d\n”, a, b);
+
+}
+
+- Determine qué mensajes se imprimirán en la terminal. ¿Cuántos procesos se crean en total? ¿Cuántos coexisten en el sistema como máximo?. Nota: suponer que todas las llamadas al sistema se ejecutan exitosamente.
+	- Se crean 4 procesos hijo, en total son 5 procesos si contamos al padre
+	- El exelcp hace que el código del hijo se modifique por completo por lo que deja de ejecutarse y se pierde todo lo del print de abaji
+	- Por tanto y como esta dentro de un for el resultado esperado es a= 7 y b=-2
+		- a = 7 porque sale de hacer el a++ de cada wait y b = -2 pq sale de hacer el b-- de cada wait
 # Planificación Procesos
 
 - Ejercicio 16. En un sistema monoprocesador se ejecutan los procesos mostrados a continuación (todos los tiempos son en segundos): (EXAMEN)

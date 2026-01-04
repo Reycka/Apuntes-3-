@@ -33,12 +33,13 @@ Teoría:
 	- Los identificadores de grupo y demás con sus diferencias y características
 	- Tabla de Descriptores, direcotorios de trabajo y de raíz
 	- Contexto de ejecucion, Proc
-	- Definicion del proceso init y que hace
+	- Definicion del proceso init y que hace  Diapo 20
 	- Envío de señales, que son y cual es su gestión en cuanto a los procesos, los ejemplos NO
 	- Que es una sesión, que es un grupo de procesos
+		- Son niveles de agrupación, la sesión es el nivel más alto de agrupación es la propia shell, es como el padre supremo de todos los grupos los cuales parten de él.
 	- Niveles de planificación a nivel teorico (cuando se ejecuta, los eventos de planificacion, cambios de contexto)
 	- Planificadores expropiativos y no expropiativos
-	- SJB,RR,planificador de linux etc etc, una pequeña defiicion y sus caracteristicas buenas o malas
+	- SJF,RR,planificador de linux etc etc, una pequeña defiicion y sus caracteristicas buenas o malas
 - Tema 4
 	- Que es la memoria virtual y cual es su objetivo
 	- Funcionamiento en cuanto a tamaños 
