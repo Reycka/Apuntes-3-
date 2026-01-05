@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SO/Examen de SO.md",
+                "file": "SO/Tema 4 Memoria/HOJA 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Examen de SO"
+              "title": "HOJA 4"
             }
           }
         ],
@@ -224,25 +224,25 @@
   },
   "active": "7fe0333311734eb7",
   "lastOpenFiles": [
-    "SO/Tema 4 Memoria/HOJA 4.md",
     "SO/Tema 4 Memoria/4.4 Gestión de la memoria principal.md",
+    "SO/Examen de SO.md",
+    "SO/Tema 4 Memoria/HOJA 4.md",
+    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260105000146.png",
+    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260105000145.png",
+    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260105000129.png",
+    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104212554.png",
+    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104210839.png",
+    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104210814.png",
+    "Pasted image 20260104203545.png",
     "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104191329.png",
     "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104191152.png",
     "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104191134.png",
-    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104191021.png",
-    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104190900.png",
-    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104190601.png",
     "SO/Tema 4 Memoria/4.3 Cache de páginas.md",
-    "SO/Examen de SO.md",
-    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260104184459.png",
     "SO/Tema 4 Memoria/4.2 Mapa de Memoria de un Proceso.md",
     "SO/Tema 4 Memoria/4.1 Fundamentos de la memoria virtual.md",
     "SO/Tema 4 Memoria/Imágenes Tema4",
-    "SO/Tema 4 Memoria/Imágenes Tema4/Pasted image 20260103214238.png",
     "SO/Tema 4 Memoria/4.3 Caché de páginas.md",
     "SO/Tema 3 Procesos/HOJA 3.md",
-    "SO/Tema 3 Procesos/Imagenes Tema3/Pasted image 20260102200718.png",
-    "SO/Tema 3 Procesos/Imagenes Tema3/Pasted image 20260102200630.png",
     "SO/Tema 2 Sistemas de Ficheros/2.4 Sistemas de ficheros.md",
     "SO/Tema 2 Sistemas de Ficheros/HOJA 2.md",
     "SO/Tema 3 Procesos/3.2 Representación en el sistema operativo.md",
