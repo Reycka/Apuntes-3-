@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "75bc34d5978b7eb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 1er Semestre/ICI/TEMA 4 Razonamiento Básico en casos.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TEMA 4 Razonamiento Básico en casos"
-            }
-          },
-          {
             "id": "e51bc9fe63a0d4c5",
             "type": "leaf",
             "state": {
@@ -51,12 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º 1er Semestre/SIM/Tema 4 Muelles/Muelles.md",
+                "file": "3º 1er Semestre/MARP/TEMA 1 AVL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Muelles"
+              "title": "TEMA 1 AVL"
+            }
+          },
+          {
+            "id": "0ff8621358b1288b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/MARP/TEMA 1 AVL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TEMA 1 AVL"
             }
           }
         ],
@@ -111,6 +111,20 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "75bc34d5978b7eb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/ICI/TEMA 4 Razonamiento Básico en casos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TEMA 4 Razonamiento Básico en casos"
             }
           }
         ]
@@ -219,20 +233,38 @@
       "bases:Create new base": false
     }
   },
-  "active": "4117a63548795f24",
+  "active": "0ff8621358b1288b",
   "lastOpenFiles": [
     "3º 1er Semestre/MARP/TEMA 13 RAMIFICACIÓN Y PODA Y ARBOLES DE JUEGO.md",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208211028.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208210858.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208210741.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208220753.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208220413.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208220402.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208220225.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208215655.png",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208211047.png",
+    "3º 1er Semestre/MARP/TEMA 12 MEJORAS DE RENDIMIENTO EN PD.md",
+    "3º 1er Semestre/MARP/TEMA 11 APLICACIONES DE LA PROGRAMACION DINAMICA.md",
+    "3º 1er Semestre/MARP/TEMA 1 AVL.md",
+    "3º 1er Semestre/MARP/TEMA 6 CONJUNTOS DISJUNTOS.md",
+    "3º 1er Semestre/MARP/TEMA 7 DIGRAFOS VALORADOS.md",
     "3º 1er Semestre/MARP/TEMA 9 SOLUCIONES VORACES.md",
-    "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego/Pasted image 20251208210630.png",
+    "3º 1er Semestre/MARP/TEMA 8 ALGORITMOS VORACES.md",
+    "3º 1er Semestre/MARP/TEMA 4 GRAFOS NO DIRIGIDOS.md",
+    "3º 1er Semestre/MARP/TEMA 10 PROGRAMACIÓN DINÁMICA.md",
+    "3º 1er Semestre/MARP/TEMA 5 GRAFOS DIRIGIDOS.md",
+    "Pasted image 20260112135737.png",
+    "Pasted image 20260112135718.png",
+    "3º 1er Semestre/MARP/Imagenes GRAFOS DIRIGIDOS/Pasted image 20260112135649.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/Imágenes Tema 5/Pasted image 20251205122024.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/Imágenes Tema 5/Pasted image 20251211115809.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/Imágenes Tema 5/Pasted image 20260106173106.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/Imágenes Tema 5/Pasted image 20260106201313.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/Imágenes Tema 5/Pasted image 20260106201337.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/Imágenes Tema 5/Pasted image 20260106221712.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/Imágenes Tema 5/Pasted image 20260106221737.png",
+    "3º 1er Semestre/SO/Tema 5 Threads y Sincronización/HOJA 5.md",
+    "3º 1er Semestre/SO/Tema 4 Memoria/4.2 Mapa de Memoria de un Proceso.md",
+    "3º 1er Semestre/SO/Tema 4 Memoria/4.3 Cache de páginas.md",
+    "3º 1er Semestre/SO/Tema 4 Memoria/4.4 Gestión de la memoria principal.md",
+    "3º 1er Semestre/SO/Examen de SO.md",
+    "3º 1er Semestre/SO/Tema 4 Memoria/Imágenes Tema4/desktop.ini",
+    "3º 1er Semestre/SO/Tema 1 Introducción/Imágenes Tema 1",
+    "3º 1er Semestre/SIM/Tema 4 Muelles/Muelles.md",
+    "3º 1er Semestre/SO/Tema 4 Memoria/Imágenes Tema4",
     "Untitled 1",
     "3º 1er Semestre/MARP/Imagenes Ramificacion y Poda y Arboles de Juego",
     "3º 1er Semestre/ICI/TEMA 4 Razonamiento Básico en casos.md"

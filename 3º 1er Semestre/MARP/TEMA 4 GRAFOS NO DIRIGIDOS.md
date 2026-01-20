@@ -21,3 +21,8 @@ DEFINICIONES:
 - Los grafos no dirigidos dan lugar a un equivalente de 2 aristas en la lista de adyacentes en lugar de 1, cosa que en la dirgida no ocurre
 - En un recorrido de anchura el mínimo de veces que se incluye un vertice es 0 (el no conectado al origen)
 - La operación para calcular los adyacentes a un vértice tiene coste en O(V) (aunque después de la lista solamente queramos saber su longitud). Y esta operación se repite para cada vértice. El coste total está en O(V2).
+
+
+
+![[Pasted image 20260112135649.png]]
+![[Pasted image 20260112135718.png]]![[Pasted image 20260112135737.png]]
