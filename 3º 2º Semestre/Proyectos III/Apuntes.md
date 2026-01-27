@@ -1,0 +1,22 @@
+- Un assert es un error de PROGRAMACIÓN, no un error de carga de archivos o mapas, mientras que las excepciones si que capan lo otro
+- Una dll es conceptualmente un .exe que funciona como un .lib que se ejecuta al activar el .exe del proceso en cuestión (Librería de enlace dinámico), es decir, el .exe todavía tiene llamadas que no se han resuelto, y no es hasta que se ejecuta y se encuentra la dll que se rellena ese hueco, si no se encuentra el .dll se produce el error de CARGA
+
+- ARQUTECTURA:
+	- Si se separa en 2 cajas que almacenen el juego en su totalidad las cajas de arquitectura son:
+		- Motor como la base, que es la parte reutilizable del código
+		- Gameplay que representa todo el código del juego
+		- Luego por fuera existen los ficheros tanto propios del juego como los del motor, estos últimos no se van a tocar
+			- Dentro de los ficheros del juego destacamos tipos de ficheros:
+				- json que almacenan: imágenes, audio, texturas y materiales
+			- Estos ficheros se relacionan con el motor de forma que este es siempre el que carga los recursos del juego, aunque si el motor no puede traducir algún tipo de archivo habría que o ampliarlo o hacer el parseador en el Gameplay
+		- SDL es un HAL, capa de abstracción del hardware, me permite abstraerme de como funcionan los básicos 
+	- ¿Qué hay dentro del motor?
+		- Módulos: Son la infrainstructura para poder trabajar con los distintos componentes del juego, audio, UI, gráfico, físicas...
+		- .El sistema de componentes, ya sea Entidad Componente o un Entidad Componente Sistema
+	- Main:
+		- Se encuentra en el motor aunque puede estar en el gameplay si es que el motor es una librería que hay que compilar como SDL QUE NO ES UN MOTOR
+	- Ejecución:
+		- .h que no se compilan y .cpp que si se compilan y que incluyen a los .h
+		- Proces Compilación: los cpp al compilarse generan los ficheros .obj o .lib
+		- Proceso enlazado: todos los .h que prometían código que no estaba en el .cpp o los propios .lib que prometían llamadas se resuelven ya que antes de esto el .lib y el .h no existen para el .obj y es el enlazado el que le dice al ordenador donde están y que si existen realmente. Una vez terminado esto se genera el .exe o el .lib o el .dll
+	-  El juego es una dll entonces el motor carga la dll para sacar el gameplay

@@ -1,1 +1,0 @@
-- Un assert es un error de PROGRAMACIÓN, no un error de carga de archivos o mapas, mientras que las excepciones si que capan lo otro
