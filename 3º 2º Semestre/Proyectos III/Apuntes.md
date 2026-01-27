@@ -20,3 +20,36 @@
 		- Proces Compilación: los cpp al compilarse generan los ficheros .obj o .lib
 		- Proceso enlazado: todos los .h que prometían código que no estaba en el .cpp o los propios .lib que prometían llamadas se resuelven ya que antes de esto el .lib y el .h no existen para el .obj y es el enlazado el que le dice al ordenador donde están y que si existen realmente. Una vez terminado esto se genera el .exe o el .lib o el .dll
 	-  El juego es una dll entonces el motor carga la dll para sacar el gameplay
+	
+- VISUAL STUDIO
+	- Un proyecto de visual studio es una agrupación de código fuente / ficheros que sirve para generar un único resultado, una única solución
+	- Una solución es 
+	- Inicialmente se genera una solución vacía (se busca solucion en blanco en Visual studio)
+	- Con la solución vacía se crea un proyecto nuevo haciendo click derecho agregar proyecto en la solución vacía (Aplicación en consola)
+	- Es importanto generar una carpeta para agregar el código fuente (src) y otro directorio para los projects
+	- Para mover las cosas se elimina el proyecto de la solución y ahora si, me pongo a organizar las carpetas
+	- Una vez organizado esto se añade de nuevo a la solución, esto guarda la ruta relativa de la solución al proyecto
+	- La arquitectura x64 sirve para procesadores de 64 bits mientras que el de x86 sirve para procesadores de 32 y 64 bits respectivamente
+	- Hay una opción en compilar que se llama compilación por bloques que permite compilar de todas las formas posibles (Debug release x86 x64)
+	- Crear un directorio tmp el cual almacenará todos los archivos temporales del proyecto (LOS ARCHIVOS MEDIOS DE Debug, release y x64 que se generan al compilar)
+		- 1º Nos vamos a las configuraciones del proyecto,en la configuración y la plataforma cambiamos a Todas las configuraciones y Todas las plataformas
+		- 2º Cambiamos el directorio Intermedio (donde se generan los archivos Intermendios)
+		- 3º Escribimos $(SolutionDir)tmp\$(PrjectName)\$(Platform)\$(Configuration) Esto guarda la ruta donde se almacenan estas cosas, SolutionDir es el directorio de mi solución, $Platform guarda el tipo de arquitectura y $Configuracion guarda el tipo de Configuracion, ya sea Debug o Release
+	- Vamos a hacer lo mismo para los ejecutables de VS, en un directorio Bin
+		- 1º Comenzamos en la configuración del proyecto igual que antes, ahora cambiamos a Todas las Configuraciones y todas las plataformas
+		- 2º Se crea $(SolutinDir)bin\ DEJANDO SOLO ESTO LOS .EXE SE SOBRESCRIBEN
+		- 3º Para evitar la sobrescritura nos vamos al Nombre de destino, es muy RECOMENDABLE hacerlo por separado
+			- Para el Win32 se pone un 32 detrás del ProjectName TODAS LAS CONFIGURACIONES
+			- Para el Debug cambiando 1 a 1 se cambia añadiando un _ d de Debug
+			- ESTO JODE LAS DLL YA QUE HAY QUE ESTAS BUSCAN EL .EXE, SI ESTA CON NOMBRES DISTINTOS NO LO ENCUENTRA (HAY QUE COMPILAR LA DLL)
+	- Los PDB no se suben, ya que estos tienen una serie de líneas que permiten debugear poco a poco 
+	- SI NO SE CIERRA UN FICHERO HAY UN LEAK!!!!!
+	- FICHEROS:
+		- Tienen que estar a la altura del .EXE, cosa que no va por defecto en la depuración, para ello nos vamos a la configuración del proyecto en Depuración Direcotrio de Trabajo y ahí escribimos $(TargetDir) QUE ES DONDE SE EJECUTA EL .EXE
+	- Todo esto se hace para cada proyecto
+	- Hay que establecer el proyecto que queremos compilar como Por defecto Dando clic derecho y buscando el valor
+	- Para agregar Librerías y métodos de otras partes que se prometen cosas durante la fase de enlazado se crean los .h donde se hacen las promesas de las cpp que están en cuestión
+	- Entremos a la configuración del proyecto Directorios de VC++, directorios de archivos de inclusión $SolutionDir\bin\MiBibilioteca
+	- Se pueden añadir las referencias de la misma solucion agregando una referencia (si se llama así) de la librería en cuestión a usar
+	- Las librerías se generan en una carpeta Lib que funciona como tmp pero dodne se guardan los lib y las pdb de este tipo de archivos 
+	- Cambiar Nombre a proyectos
