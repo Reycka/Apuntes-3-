@@ -8,43 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9069568afc109d78",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1.1 Conceptos Generales"
-            }
-          },
-          {
-            "id": "1ec2099d725dcc75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2.1 Técnicas de cifrado y hashing"
-            }
-          },
-          {
             "id": "63182396ec44711d",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.5"
+                "file": "Redes/Tema 1 Introducción a las redes/1.1 Intro Global.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
+              "icon": "lucide-file",
+              "title": "1.1 Intro Global"
+            }
+          },
+          {
+            "id": "82e3a2c6833ab69c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Redes/Tema 1 Introducción a las redes/Problemas Tema 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Problemas Tema 1"
             }
           }
         ],
@@ -209,20 +197,26 @@
   },
   "active": "c47ce343c3870bc5",
   "lastOpenFiles": [
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260127151521.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260127151002.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260126152810.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260126152736.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260126152538.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260126152210.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260126151831.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260126144119.png",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260126141810.png",
-    "Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Problemas Hoja 1",
+    "Redes/Tema 1 Introducción a las redes/1.1 Intro Global.md",
+    "Redes/Tema 1 Introducción a las redes/Problemas Tema 1.md",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Problemas Hoja 1/Pasted image 20260129101601.png",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Problemas Hoja 1/Pasted image 20260129100520.png",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129100137.png",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129095344.png",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129094351.png",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129094123.png",
+    "Pasted image 20260129094036.png",
+    "Pasted image 20260129094029.png",
+    "Pasted image 20260129093701.png",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129092910.png",
+    "Imágenes.md",
+    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.2 Certificado y credenciales.md",
     "Redes/Tema 1/Introducción.md",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2",
+    "Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.2 Certificado y credenciales.md",
     "Redes/Tema 1",
     "Redes",
     "Ciberseguridad/Tema 1 Introducción/1.3 Problema específica de los videojuegos.md",
@@ -244,7 +238,6 @@
     "Ciberseguridad/Tema 3 Seguridad en redes",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas",
     "Ciberseguridad/Tema 1 Introducción",
-    "Proyectos III",
     "Welcome.md"
   ]
 }
