@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redes/Tema 1 Introducción a las redes/Problemas Tema 1.md",
+                "file": "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.3 Programación segura.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Problemas Tema 1"
+              "title": "2.3 Programación segura"
             }
           }
         ],
@@ -195,32 +195,33 @@
       "bases:Create new base": false
     }
   },
-  "active": "c47ce343c3870bc5",
+  "active": "82e3a2c6833ab69c",
   "lastOpenFiles": [
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.2 Certificado y credenciales.md",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260203144519.png",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260203144518.png",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260203142032.png",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260203141745.png",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260203141702.png",
+    "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2/Pasted image 20260203141649.png",
+    "Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
+    "Ciberseguridad/Tema 1 Introducción/1.2 Ciberamenazas y tendencias.md",
+    "Ciberseguridad/Tema 1 Introducción/1.3 Problema específica de los videojuegos.md",
+    "Proyectos III/Apuntes.md",
+    "Redes/Tema 1 Introducción a las redes/Problemas Tema 1.md",
     "Redes/Tema 1 Introducción a las redes/Imágenes Problemas Hoja 1",
     "Redes/Tema 1 Introducción a las redes/1.1 Intro Global.md",
-    "Redes/Tema 1 Introducción a las redes/Problemas Tema 1.md",
     "Redes/Tema 1 Introducción a las redes/Imágenes Problemas Hoja 1/Pasted image 20260129101601.png",
     "Redes/Tema 1 Introducción a las redes/Imágenes Problemas Hoja 1/Pasted image 20260129100520.png",
     "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129100137.png",
     "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129095344.png",
-    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129094351.png",
-    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129094123.png",
-    "Pasted image 20260129094036.png",
-    "Pasted image 20260129094029.png",
-    "Pasted image 20260129093701.png",
-    "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1/Pasted image 20260129092910.png",
     "Imágenes.md",
     "Redes/Tema 1 Introducción a las redes/Imágenes Tema 1",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
     "Redes/Tema 1/Introducción.md",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2",
-    "Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
-    "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.2 Certificado y credenciales.md",
     "Redes/Tema 1",
     "Redes",
-    "Ciberseguridad/Tema 1 Introducción/1.3 Problema específica de los videojuegos.md",
-    "Ciberseguridad/Tema 1 Introducción/1.2 Ciberamenazas y tendencias.md",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.3 Programación segura.md",
     "Ciberseguridad/Tema 3 Seguridad en redes/3.2 Cortafuegos.md",
     "Ciberseguridad/Tema 3 Seguridad en redes/3.3 IDSs para videojuegos.md",
@@ -237,7 +238,6 @@
     "Ciberseguridad/Tema 4 Protección de la propiedad Intelectual",
     "Ciberseguridad/Tema 3 Seguridad en redes",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas",
-    "Ciberseguridad/Tema 1 Introducción",
     "Welcome.md"
   ]
 }
