@@ -1,0 +1,8 @@
+- 3. Un computador tiene la siguiente dirección IP en notación CIDR: 150.26.193.66/21. Determinar: 
+- a) La máscara de red en notación decimal de punto. 
+	- 255.255.63.0.0
+- b) La dirección de la red donde está conectado el computador. 
+	- 150.26
+- c) La dirección de difusión (broadcast) de dicha red. 
+- d) El número máximo de máquinas que pueden conectarse a esa red. 
+- e) El rango de direcciones IP que pueden asignarse a las máquinas de dicha red.
