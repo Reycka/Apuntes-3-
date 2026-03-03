@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ciberseguridad/Tema 3 Seguridad en redes/3.2 Cortafuegos.md",
+                "file": "Ciberseguridad/Tema 3 Seguridad en redes/3.4 Seguridad web.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.2 Cortafuegos"
+              "title": "3.4 Seguridad web"
             }
           }
         ],
@@ -59,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -186,39 +186,46 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
     }
   },
-  "active": "c47ce343c3870bc5",
+  "active": "ea06e0f625a631ba",
   "lastOpenFiles": [
-    "Ciberseguridad/Tema 3 Seguridad en redes/Imágenes Tema 3/Pasted image 20260302152620.png",
-    "Ciberseguridad/Tema 3 Seguridad en redes/Imágenes Tema 3/Pasted image 20260302152558.png",
-    "Ciberseguridad/Tema 3 Seguridad en redes/Imágenes Tema 3/Pasted image 20260302152552.png",
-    "Ciberseguridad/Tema 3 Seguridad en redes/Imágenes Tema 3/Pasted image 20260302152541.png",
+    "Ciberseguridad/Tema 3 Seguridad en redes/3.5 Ataques DoS y recuperación.md",
+    "Ciberseguridad/Tema 3 Seguridad en redes/3.4 Seguridad web.md",
     "Ciberseguridad/Tema 3 Seguridad en redes/3.3 IDSs para videojuegos.md",
-    "Ciberseguridad/Tema 3 Seguridad en redes/3.1 Vulnerabilidad en protocolos de red.md",
     "Ciberseguridad/Tema 3 Seguridad en redes/3.2 Cortafuegos.md",
-    "Ciberseguridad/Tema 3 Seguridad en redes/Imágenes Tema 3/Pasted image 20260224152027.png",
+    "Ciberseguridad/Tema 3 Seguridad en redes/Imágenes Tema 3/Pasted image 20260303141746.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Problemas Tema 3.md",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219103347.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219095147.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219094304.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219093919.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219093829.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219092613.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219091236.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219092359.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260219091346.png",
+    "Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3",
+    "Redes/Tema 3 Capa de Red o capa IP/3.4 Encaminamiento.md",
+    "Redes/Tema 3 Capa de Red o capa IP/3.3 Direccionamiento.md",
+    "Redes/Tema 3 Capa de Red o capa IP/3.2 Fragmentación.md",
+    "Redes/Tema 3 Capa de Red o capa IP/3.1 Introducción.md",
+    "Redes/Tema 3 Capa de Red o capa IP",
+    "Proyectos III/COMPILAR DLL.md",
+    "Ciberseguridad/Tema 3 Seguridad en redes/3.1 Vulnerabilidad en protocolos de red.md",
     "Ciberseguridad/Tema 3 Seguridad en redes/Imágenes Tema 3",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.2 Certificado y credenciales.md",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas/2.3 Programación segura.md",
-    "Ciberseguridad/Tema 3 Seguridad en redes/3.4 Seguridad web.md",
-    "Ciberseguridad/Tema 3 Seguridad en redes/3.5 Ataques DoS y recuperación.md",
     "Redes/Tema 2 Capa física y capa de enlace/2.3 Capa de enlace.md",
-    "Redes/Tema 2 Capa física y capa de enlace/Imágenes Problemas Hoja 2/Pasted image 20260206124234.png",
     "Redes/Tema 2 Capa física y capa de enlace/Problemas Tema 2.md",
-    "Redes/Tema 2 Capa física y capa de enlace/Imágenes Problemas Hoja 2/Pasted image 20260206122510.png",
-    "Pasted image 20260206123640.png",
-    "Redes/Tema 2 Capa física y capa de enlace/Imágenes Problemas Hoja 2/Pasted image 20260206114536.png",
-    "Redes/Tema 2 Capa física y capa de enlace/Imágenes Tema2/Pasted image 20260206114153.png",
-    "Redes/Tema 2 Capa física y capa de enlace/Imágenes Tema2/Pasted image 20260206114142.png",
     "Redes/Tema 2 Capa física y capa de enlace/2.2 Capa Física.md",
     "Redes/Tema 1 Introducción a las redes/1.1 Intro Global.md",
     "Redes/Tema 2 Capa física y capa de enlace/2.1 Introudcción.md",
@@ -234,14 +241,6 @@
     "Redes/Tema 1/Introducción.md",
     "Ciberseguridad/Tema 2 Seguridad en Sistemas/Imágenes Tema 2",
     "Redes/Tema 1",
-    "Redes",
-    "Ciberseguridad/Tema 4 Protección de la propiedad Intelectual/4.1 DRM.md",
-    "Ciberseguridad/Tema 5 Programación para prevenir trampas/5.1 Tácticas usadas para hacer trampas.md",
-    "Ciberseguridad/Tema 5 Programación para prevenir trampas/5.2 Técnicas para evitar que se puedan hacer trampas.md",
-    "Ciberseguridad/Tema 6 Marco Legal/6.1 Código de ciberseguridad RGPD.md",
-    "Ciberseguridad/Tema 6 Marco Legal/6.2 Reglamento UE 2024 2847.md",
-    "Ciberseguridad/Tema 6 Marco Legal",
-    "Ciberseguridad/Tema 5 Programación para prevenir trampas",
-    "Welcome.md"
+    "Redes"
   ]
 }
