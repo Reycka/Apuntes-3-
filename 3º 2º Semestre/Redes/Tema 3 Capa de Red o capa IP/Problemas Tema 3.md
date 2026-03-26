@@ -21,3 +21,79 @@
 		- 2^6 -2
 	- e) El rango de direcciones IP que pueden asignarse a las máquinas de dicha red.
 		- 150.26.193.65 - 150.26.193.126
+- 5. Supongamos una red con dirección 147.96.0.0/16 en la que se quieren hacer 8 subredes. Determinar: 
+	- a) La nueva máscara de subred. 
+		- 255.255.224.0
+	- b) La dirección de red, dirección de difusión y rango de direcciones IP de cada subred. 
+		- SubRed1
+			- Direccion de Red: 147.96.0.0
+			- Direccion de difusion: 147.96.31.255 (0 + 31)
+			- Rango de direcciones: 147.96.0.1 - 147.96.31.254
+		- SubRed2
+			- Direccion de Red: 147.96.32.0
+			- Direccion de difusion: 147.96.63.255 (32 + 31)
+			- Rango de direcciones:147.96.32.1 - 147.96.63.254
+		- SubRed3
+			- Direccion de Red: 147.96.64.0
+			- Direccion de difusion: 147.96.95.255 (64 + 31)
+			- Rango de direcciones: 147.96.64.1 - 147.96.95.254
+		- SubRed4
+			- Direccion de Red: 147.96.96.0
+			- Direccion de difusion: 147.96.127.255
+			- Rango de direcciones: 147.96.96.1 - 147.96.127.254
+		- SubRed5
+			- Direccion de Red: 147.96.128.0
+			- Direccion de difusion: 147.96.159.255
+			- Rango de direcciones: 147.96.128.1 - 147.96.159.254
+		- SubRed6
+			- Direccion de Red: 147.96.160.0
+			- Direccion de difusion: 147.96.191.255
+			- Rango de direcciones: 147.96.128.1 - 147.96.191.254
+		- SubRed7
+			- Direccion de Red: 147.96.192.0
+			- Direccion de difusion: 147.96.223.255
+			- Rango de direcciones: 147.96.192.1 - 147.96.223.254
+		- SubRed8
+			- Direccion de Red: 147.96.224.0
+			- Direccion de difusion: 147.96.255.255
+			- Rango de direcciones: 147.96.224.1 - 147.96.255.254
+- 6. Supongamos una red con dirección 147.96.80.0/24 en la que se quieren crear redes de 20 hosts. Determinar:
+- a) La máscara de subred más apropiada. 
+	- 255.255.255.224
+- b) El número máximo de máquinas en cada subred. 
+	- 2^5 máquinas = 32 dispositivos
+- c) El número máximo de subredes. 
+	- 2^3 subredes = 8 Subredes
+- d) La dirección red, dirección de difusión y rango de direcciones IP de cada subred. 
+	- SubRed1
+		- Direccion de Red: 147.96.80.0
+		- Direccion de difusion: 147.96.80.31
+		- Rango de direcciones: 147.96.80.1 - 147.96.80.30
+	- SubRed2
+		- Direccion de Red: 147.96.80.32
+		- Direccion de difusion: 147.96.80.63 
+		- Rango de direcciones:147.96.80.33 - 147.96.80.62
+	- SubRed3
+		- Direccion de Red: 147.96.80.64
+		- Direccion de difusion: 147.96.80.95 
+		- Rango de direcciones: 147.96.80.66 -  147.96.80.94 
+	- SubRed4
+		- Direccion de Red: 147.96.80.96
+		- Direccion de difusion: 147.96.80.127
+		- Rango de direcciones: 147.96.80.97-  147.96.80.126
+	- SubRed5
+		- Direccion de Red: 147.96.80.128
+		- Direccion de difusion: 147.96.80.159
+		- Rango de direcciones: 147.96.80.129 - 147.96.80.158
+	- SubRed6
+		- Direccion de Red: 147.96.80.160
+		- Direccion de difusion: 147.96.80.191
+		- Rango de direcciones: 147.96.80.161 - 147.96.80.190
+	- SubRed7
+		- Direccion de Red: 147.96.80.192
+		- Direccion de difusion: 147.96.80.223
+		- Rango de direcciones: 147.96.80.193 - 147.96.80.222
+	- SubRed8
+		- Direccion de Red: 147.96.80.224
+		- Direccion de difusion: 147.96.80.255
+		- Rango de direcciones: 147.96.80.223 - 147.96.80.254
