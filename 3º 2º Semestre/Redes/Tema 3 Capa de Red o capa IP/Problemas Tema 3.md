@@ -8,7 +8,7 @@
 	- d) El número máximo de máquinas que pueden conectarse a esa red. 
 		- 2^11 -2
 	- e) El rango de direcciones IP que pueden asignarse a las máquinas de dicha red.
-		- 150.26.192.1 - 150.26.192.254
+		- 150.26.192.1 - 150.26.193.254
 	
 - 4. Repite el ejercicio 3 pero con la CIDR  150.26.193.66/26
 	- a) La máscara de red en notación decimal de punto. 

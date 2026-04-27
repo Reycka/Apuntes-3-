@@ -104,7 +104,7 @@ default via 192.168.3.1 dev eth0
 192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.20
 
 **a)**      ¿Se pueden conectar todas las máquinas? Justifica la respuesta
-- No, ya que la red A se encuentra aislada
+- No, ya que la red 1 se encuentra aislada
 b)      Arregla lo que creas necesario para que se puedan conectar.
 - Hay que introducir la IP de A al router
 c)       Si añadimos las siguientes entradas permanentes a la tabla ARP de A, evitaremos que esta máquina envíe mensajes ARP cuando se comunica con B o C. ¿Verdadero o Falso?. Razona la respuesta
@@ -118,7 +118,7 @@ a)       Describe brevemente cuál crees que ha sido el problema 
 - Hay una IP mal...
 **b)**      Para resolverlo se ha mirado la tabla de encaminamiento del router y de la máquina que ha recibido el mensaje de error obteniendo la siguiente información. **Indica dónde está el problema**
 - ![[Pasted image 20260416102200.png]]
-- El link src del Host 1 está mal puesto debería salir ahí el Router
+- La tabla de encaminamiento del Host 1 no tiene el como llegar  a la Red del Servidor
 c) ¿Qué instrucción añadirías para solucionar el problema de conexión anterior?
 - Añadiría la HOST 1 la forma de comunicarme con la Subred del servidor, que no la tiene:
 - Ip route add 192.168.1.0 via 192.168.1.126 dev eth0
