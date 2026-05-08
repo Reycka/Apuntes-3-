@@ -8,143 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2ea959a9ccbbcb05",
+            "id": "c43d10240a4f009f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.1 Código de ciberseguridad RGPD.md",
+                "file": "3º 2º Semestre/Redes/Repaso Redes/Examen Mayo 2025.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.1 Código de ciberseguridad RGPD"
-            }
-          },
-          {
-            "id": "4514235f1ea1ad6c",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Problemas Tema 3/Pasted image 20260326101335.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260326101335"
-            }
-          },
-          {
-            "id": "e732dbc6b0a3c53f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 2º Semestre/Redes/Tema 4 Capa de transporte/4.1 Protocolos de transporte en internet.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4.1 Protocolos de transporte en internet"
-            }
-          },
-          {
-            "id": "1ac3bbe1c3b01cc3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 2º Semestre/Redes/Tema 4 Capa de transporte/4.2 Protocolo UDP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4.2 Protocolo UDP"
-            }
-          },
-          {
-            "id": "d2ac4dce1382088f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.1 Código de ciberseguridad RGPD.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6.1 Código de ciberseguridad RGPD"
-            }
-          },
-          {
-            "id": "8723e3ee7decd831",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 2º Semestre/Redes/Repaso Redes/Ejercicio Repaso.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio Repaso"
-            }
-          },
-          {
-            "id": "22485679d297c683",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416091303.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260416091303"
-            }
-          },
-          {
-            "id": "0f427dd5164d52f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 2º Semestre/Redes/Repaso Redes/Ejercicio Repaso.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio Repaso"
-            }
-          },
-          {
-            "id": "d5adab626470e1c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.1 Servicios básicos de red DHCP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "5.1 Servicios básicos de red DHCP"
-            }
-          },
-          {
-            "id": "2e7be19e44337743",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.2 Protección de la propiedad Intelectual.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6.2 Protección de la propiedad Intelectual"
+              "title": "Examen Mayo 2025"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -317,11 +194,30 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "2e7be19e44337743",
+  "active": "c43d10240a4f009f",
   "lastOpenFiles": [
-    "3º 2º Semestre/Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
-    "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.2 Protección de la propiedad Intelectual.md",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.2 Servicios básicos de red NAPT y DNS.md",
+    "3º 2º Semestre/Redes/Repaso Redes/Examen Mayo 2025.md",
+    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507104558.png",
+    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/2.3 Capa de enlace.md",
+    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/2.2 Capa Física.md",
+    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507093341.png",
+    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507091804.png",
+    "3º 2º Semestre/Redes/Repaso Redes/Ejercicio Repaso.md",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430094300.png",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430093053.png",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430092616.png",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430092443.png",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430092318.png",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430091219.png",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.1 Servicios básicos de red DHCP.md",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430090939.png",
+    "3º 2º Semestre/Ciberseguridad/Parcial 2.md",
     "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.1 Código de ciberseguridad RGPD.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.2 Protección de la propiedad Intelectual.md",
+    "3º 2º Semestre/Ciberseguridad/Parcial 1.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
     "3º 2º Semestre/Ciberseguridad/Tema 5 Programación para prevenir trampas/5.2 Técnicas para evitar que se puedan hacer trampas.md",
     "3º 2º Semestre/Ciberseguridad/Tema 5 Programación para prevenir trampas/5.1 Tácticas usadas para hacer trampas.md",
     "3º 2º Semestre/Ciberseguridad/Tema 4 Protección de la propiedad Intelectual/4.1 DRM.md",
@@ -335,35 +231,15 @@
     "3º 2º Semestre/Ciberseguridad/Tema 1 Introducción/1.3 Problema específica de los videojuegos.md",
     "3º 2º Semestre/Ciberseguridad/Tema 1 Introducción/1.2 Ciberamenazas y tendencias.md",
     "3º 2º Semestre/Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.2 Servicios básicos de red NAPT y DNS.md",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.1 Servicios básicos de red DHCP.md",
-    "3º 2º Semestre/Redes/Repaso Redes/Ejercicio Repaso.md",
     "3º 2º Semestre/Redes/Tema 5 Capa de aplicación",
     "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Problemas Tema 3.md",
-    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/Problemas Tema 2.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.5 Otros protocolos de red.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.4 Encaminamiento.md",
     "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/Imágenes Tema 6",
-    "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/Imágenes Tema 6/Pasted image 20260421151351.png",
-    "3º 2º Semestre/Ciberseguridad/Parcial 1.md",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte/4.3 Protocolo TCP.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.3 Direccionamiento.md",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416090846.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416091313.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416091303.png",
     "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso",
     "3º 2º Semestre/Redes/Repaso Redes",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416102200.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416101120.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416095106.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416093905.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416093509.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260416093438.png",
     "3º 2º Semestre/Redes/Tema 4 Capa de transporte/Imágenes Problemas Tema 4",
     "3º 2º Semestre/Redes/Tema 4 Capa de transporte/Imágenes Tema 4",
     "3º 2º Semestre/Redes/Tema 4 Capa de transporte",
     "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3",
-    "3º 2º Semestre/Redes/Tema 1 Introducción a las redes",
-    "3º 2º Semestre/Redes"
+    "3º 2º Semestre/Redes/Tema 1 Introducción a las redes"
   ]
 }
