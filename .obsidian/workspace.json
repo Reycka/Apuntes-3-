@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.3 Direccionamiento.md",
+                "file": "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Problemas Tema 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.3 Direccionamiento"
+              "title": "Problemas Tema 3"
             }
           }
         ]
@@ -196,17 +196,18 @@
   },
   "active": "c43d10240a4f009f",
   "lastOpenFiles": [
+    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/Problemas Tema 2.md",
+    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.5 Otros protocolos de red.md",
     "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.2 Fragmentación.md",
+    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.3 Direccionamiento.md",
+    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.4 Encaminamiento.md",
     "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/2.2 Capa Física.md",
     "3º 2º Semestre/Redes/Tema 1 Introducción a las redes/1.1 Intro Global.md",
     "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/2.3 Capa de enlace.md",
-    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/Problemas Tema 2.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.3 Direccionamiento.md",
     "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260514011948.png",
     "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260514005524.png",
     "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.1 Introducción.md",
     "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260514003928.png",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.4 Encaminamiento.md",
     "3º 2º Semestre/Redes/Repaso Redes/Examen Mayo 2025.md",
     "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.2 Servicios básicos de red NAPT y DNS.md",
     "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507104558.png",
@@ -232,7 +233,6 @@
     "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.3 IDSs para videojuegos.md",
     "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.2 Cortafuegos.md",
     "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.1 Vulnerabilidad en protocolos de red.md",
-    "3º 2º Semestre/Ciberseguridad/Tema 2 Seguridad en Sistemas/2.3 Programación segura.md",
     "3º 2º Semestre/Redes/Tema 5 Capa de aplicación",
     "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/Imágenes Tema 6",
     "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso",
