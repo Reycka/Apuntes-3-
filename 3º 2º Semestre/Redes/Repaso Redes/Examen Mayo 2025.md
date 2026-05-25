@@ -64,7 +64,7 @@ SWITCH 5
 
 | Marca de Tiempo | DIR MAC | Puerto | Donde manda |
 | --------------- | ------- | ------ | ----------- |
-| 1 *3            | A       | 1      | Br /// 2    |
+| 1 *3            | A       | 1      | Br /// R2   |
 |                 | R1-eth0 | 0      |             |
 | *2 *6           | R2-eth2 | 2      | 1 / 1       |
 
@@ -87,7 +87,7 @@ CABECERA TRAMA ETHERNET
 
 | DIR DESTINO | DIR ORIGEN |
 | ----------- | ---------- |
-| AP2         | AP1        |
+| K           | P          |
 
 
 b) Una persona entra en la zona wifi (subred 1) y su portátil realiza una configuración automática de los parámetros de la red (IP, máscara, router predeterminado…) ¿Qué servicio de la capa de aplicación está usando el portátil?
