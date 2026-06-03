@@ -8,20 +8,91 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c43d10240a4f009f",
+            "id": "b88ede3226427d21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º 2º Semestre/Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
+                "file": "3º 1er Semestre/MARP/TEMA 1/1.1 Árboles Binarios.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.1 Conceptos Generales"
+              "title": "1.1 Árboles Binarios"
+            }
+          },
+          {
+            "id": "15466cd8e1036dff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/MARP/TEMA 1/1.1 Árboles Binarios.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1.1 Árboles Binarios"
+            }
+          },
+          {
+            "id": "cc343a40bcb4ab26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/SO/Examen de SO.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Examen de SO"
+            }
+          },
+          {
+            "id": "1a2c2431c4a22468",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/SO/Examen de SO.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Examen de SO"
+            }
+          },
+          {
+            "id": "9152beaea852c22d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/MARP/Tema 3/3.1 Heapsort.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3.1 Heapsort"
+            }
+          },
+          {
+            "id": "6ac380575ceecdaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/MARP/Tema 3/3.2 Colas de prioridad con prioridades variables.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3.2 Colas de prioridad con prioridades variables"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -194,53 +265,53 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "c43d10240a4f009f",
+  "active": "d94da5f5c41a0ffb",
   "lastOpenFiles": [
-    "3º 1er Semestre/SO/Tema 1 Introducción/1.1 Fundamentos de los sistemas operativos.md",
-    "3º 2º Semestre/Redes/Repaso Redes/Examen Mayo 2025.md",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507091804.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507093341.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507104558.png",
-    "3º 2º Semestre/Redes/Tema 1 Introducción a las redes/1.1 Intro Global.md",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.2 Servicios básicos de red NAPT y DNS.md",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte/4.2 Protocolo UDP.md",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430094300.png",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430093053.png",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/5.1 Servicios básicos de red DHCP.md",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte/Problemas Tema 4.md",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte/4.3 Protocolo TCP.md",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte/4.1 Protocolos de transporte en internet.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.5 Otros protocolos de red.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Problemas Tema 3.md",
-    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/Problemas Tema 2.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.2 Fragmentación.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.3 Direccionamiento.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.4 Encaminamiento.md",
-    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/2.2 Capa Física.md",
-    "3º 2º Semestre/Redes/Tema 2 Capa física y capa de enlace/2.3 Capa de enlace.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260514011948.png",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260514005524.png",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/3.1 Introducción.md",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3/Pasted image 20260514003928.png",
-    "3º 2º Semestre/Redes/Repaso Redes/Ejercicio Repaso.md",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430092616.png",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5/Pasted image 20260430092443.png",
-    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5",
-    "3º 2º Semestre/Ciberseguridad/Parcial 2.md",
-    "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.1 Código de ciberseguridad RGPD.md",
+    "3º 1er Semestre/MARP/Tema 3/Imágenes Tema 3/Pasted image 20260603183458.png",
+    "3º 1er Semestre/MARP/Tema 3/Imágenes Tema 3/Pasted image 20260603183305.png",
+    "3º 1er Semestre/MARP/Tema 3/3.2 Colas de prioridad con prioridades variables.md",
+    "3º 1er Semestre/MARP/Tema 3/3.1 Heapsort.md",
+    "3º 1er Semestre/MARP/Tema 3/Imágenes Tema 3/Pasted image 20260603182426.png",
+    "3º 1er Semestre/MARP/Tema 2/2.2 Montículos Binarios.md",
+    "3º 1er Semestre/MARP/Tema 3/Imágenes Tema 3/Pasted image 20260603181733.png",
+    "3º 1er Semestre/MARP/Tema 2/2.1 Colas de prioridad.md",
+    "3º 1er Semestre/SO/Examen de SO.md",
+    "3º 1er Semestre/MARP/Tema 3/Imágenes Tema 3",
+    "3º 1er Semestre/MARP/Tema 3",
+    "3º 1er Semestre/MARP/Tema 2/Imágenes Tema 2/Pasted image 20260601201207.png",
+    "3º 1er Semestre/MARP/Tema 2/Imágenes Tema 2/Pasted image 20260601200215.png",
+    "3º 1er Semestre/MARP/Tema 1/1.3 Cuestionario.md",
+    "3º 1er Semestre/MARP/Tema 2/Imágenes Tema 2",
+    "3º 1er Semestre/MARP/Tema 1/1.2 Árboles AVL.md",
+    "3º 1er Semestre/MARP/Tema 1/1.1 Árboles Binarios.md",
+    "3º 1er Semestre/MARP/Tema 2",
+    "3º 2º Semestre/Proyectos III/Apuntes.md",
+    "3º 2º Semestre/Proyectos III/COMPILAR LIB EN EL PROYECTO.md",
+    "3º 1er Semestre/MARP/Tema 1/Imágenes TEMA 1/Pasted image 20260531184022.png",
+    "3º 1er Semestre/MARP/Tema 1/Imágenes TEMA 1/Pasted image 20260531183657.png",
+    "3º 1er Semestre/MARP/Tema 1/Imágenes TEMA 1/Pasted image 20260531183239.png",
+    "3º 1er Semestre/MARP/Tema 1/Imágenes TEMA 1/Pasted image 20260531182911.png",
+    "3º 1er Semestre/MARP/Tema 1",
+    "3º 1er Semestre/MARP/Tema 1/Imágenes TEMA 1",
     "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.2 Protección de la propiedad Intelectual.md",
-    "3º 2º Semestre/Ciberseguridad/Parcial 1.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/6.1 Código de ciberseguridad RGPD.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.5 Cheating.md",
+    "3º 2º Semestre/Ciberseguridad/Parcial 2.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.4 Seguridad web.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.2 Cortafuegos.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.1 Vulnerabilidad en protocolos de red.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 3 Seguridad en redes/3.3 IDSs para videojuegos.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 2 Seguridad en Sistemas/2.3 Programación segura.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 2 Seguridad en Sistemas/2.2 Certificado y credenciales.md",
     "3º 2º Semestre/Ciberseguridad/Tema 2 Seguridad en Sistemas/2.1 Técnicas de cifrado y hashing.md",
-    "3º 2º Semestre/Ciberseguridad/Tema 5 Programación para prevenir trampas/5.2 Técnicas para evitar que se puedan hacer trampas.md",
-    "3º 2º Semestre/Ciberseguridad/Tema 5 Programación para prevenir trampas/5.1 Tácticas usadas para hacer trampas.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 1 Introducción/1.3 Problema específica de los videojuegos.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 1 Introducción/1.2 Ciberamenazas y tendencias.md",
+    "3º 2º Semestre/Ciberseguridad/Tema 1 Introducción/1.1 Conceptos Generales.md",
+    "3º 2º Semestre/Ciberseguridad/Parcial 1.md",
+    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso/Pasted image 20260507091804.png",
+    "3º 2º Semestre/Redes/Tema 5 Capa de aplicación/Imágenes Tema 5",
     "3º 2º Semestre/Redes/Tema 5 Capa de aplicación",
     "3º 2º Semestre/Ciberseguridad/Tema 6 Marco Legal/Imágenes Tema 6",
-    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso",
-    "3º 2º Semestre/Redes/Repaso Redes",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte/Imágenes Problemas Tema 4",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte/Imágenes Tema 4",
-    "3º 2º Semestre/Redes/Tema 4 Capa de transporte",
-    "3º 2º Semestre/Redes/Tema 3 Capa de Red o capa IP/Imágenes Tema 3",
-    "3º 2º Semestre/Redes/Tema 1 Introducción a las redes"
+    "3º 2º Semestre/Redes/Repaso Redes/Imágenes Ej repaso"
   ]
 }
