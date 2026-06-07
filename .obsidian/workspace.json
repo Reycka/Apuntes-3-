@@ -48,9 +48,37 @@
               "icon": "lucide-file",
               "title": "5.1 Grafos Dirigidos"
             }
+          },
+          {
+            "id": "0e7c084120eceb45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/MARP/Tema 5/5.2 Ordenación topológica.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5.2 Ordenación topológica"
+            }
+          },
+          {
+            "id": "e12df8b63f9d9227",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3º 1er Semestre/MARP/Tema 5/5.1 Grafos Dirigidos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5.1 Grafos Dirigidos"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -223,10 +251,14 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "a936bcce79da4603",
+  "active": "e12df8b63f9d9227",
   "lastOpenFiles": [
-    "3º 1er Semestre/SO/Tema 2 Sistemas de Ficheros/HOJA 2.md",
+    "3º 1er Semestre/MARP/Tema 5/5.3 Detección de ciclos.md",
+    "3º 1er Semestre/MARP/Tema 5/5.2 Ordenación topológica.md",
+    "Pasted image 20260607204216.png",
+    "3º 1er Semestre/MARP/Tema 5/Imágenes Tema 5/Pasted image 20260607204411.png",
     "3º 1er Semestre/MARP/Tema 5/5.1 Grafos Dirigidos.md",
+    "3º 1er Semestre/SO/Tema 2 Sistemas de Ficheros/HOJA 2.md",
     "3º 1er Semestre/MARP/TEMA 5 GRAFOS DIRIGIDOS.md",
     "3º 1er Semestre/MARP/Tema 5/Imágenes Tema 5/Pasted image 20260606185547.png",
     "3º 1er Semestre/MARP/Tema 4/4.1 Grafos no dirigidos.md",
@@ -253,8 +285,6 @@
     "3º 1er Semestre/MARP/Imagenes GRAFOS DIRIGIDOS/Pasted image 20251013200718.png",
     "3º 1er Semestre/MARP/Imagenes GRAFOS DIRIGIDOS/Pasted image 20251013195506.png",
     "3º 1er Semestre/MARP/Imagenes GRAFOS DIRIGIDOS/Pasted image 20251012203812.png",
-    "3º 1er Semestre/MARP/Imagenes Digrafos Valorados/Pasted image 20251026212354.png",
-    "3º 1er Semestre/MARP/Imagenes Digrafos Valorados/Pasted image 20251026211937.png",
     "3º 1er Semestre/MARP/Tema 4/TEMA 4 GRAFOS NO DIRIGIDOS.md",
     "3º 1er Semestre/MARP/Tema 4/Imágenes Tema 4",
     "3º 1er Semestre/MARP/Tema 4",
@@ -266,7 +296,6 @@
     "3º 1er Semestre/MARP/Tema 1/1.3 Cuestionario.md",
     "3º 1er Semestre/MARP/Tema 2/Imágenes Tema 2",
     "3º 1er Semestre/MARP/Tema 1/1.2 Árboles AVL.md",
-    "3º 1er Semestre/MARP/Tema 1/1.1 Árboles Binarios.md",
     "3º 1er Semestre/MARP/Tema 2",
     "3º 1er Semestre/MARP/Tema 1",
     "3º 1er Semestre/MARP/Tema 1/Imágenes TEMA 1"
