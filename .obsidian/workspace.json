@@ -4,95 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "26208f562b89dc69",
+        "id": "f9cd0a2b515c964b",
         "type": "tabs",
         "children": [
           {
-            "id": "794b707e610489c2",
+            "id": "b9508f08ab99edec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º 1er Semestre/MARP/Tema 6/6.1 Conjuntos Disjuntos.md",
+                "file": "3º 1er Semestre/MARP/Tema 9/9.1 Minimizar el tiempo medio en el sistema.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.1 Conjuntos Disjuntos"
+              "title": "9.1 Minimizar el tiempo medio en el sistema"
             }
           },
           {
-            "id": "5efc01b743ba5281",
+            "id": "4a6783c321699bc7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3º 1er Semestre/MARP/Tema 6/6.2 Grafos Valorados.md",
+                "file": "3º 1er Semestre/MARP/Tema 9/9.2 Tareas con plazo fijo y beneficio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.2 Grafos Valorados"
-            }
-          },
-          {
-            "id": "0c14bcb33b9ef794",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 1er Semestre/MARP/Tema 7/7.2 Caminos de coste mínimo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "7.2 Caminos de coste mínimo"
-            }
-          },
-          {
-            "id": "6cfb5d54d6668aa9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 1er Semestre/MARP/TEMA 9 SOLUCIONES VORACES.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TEMA 9 SOLUCIONES VORACES"
-            }
-          },
-          {
-            "id": "fc902038e17e5357",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 1er Semestre/MARP/Tema 8/8.1 Algoritmos voraces.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "8.1 Algoritmos voraces"
-            }
-          },
-          {
-            "id": "16e1a78c4aa08573",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3º 1er Semestre/MARP/Tema 8/8.1 Algoritmos voraces.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "8.1 Algoritmos voraces"
+              "title": "9.2 Tareas con plazo fijo y beneficio"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -265,16 +209,19 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "16e1a78c4aa08573",
+  "active": "d94da5f5c41a0ffb",
   "lastOpenFiles": [
-    "Sin título.md",
-    "3º 1er Semestre/MARP/Tema 8/Imágenes Tema 8",
+    "3º 1er Semestre/MARP/Tema 9/Imágenes Tema 9",
+    "3º 1er Semestre/MARP/Tema 9/9.1 Minimizar el tiempo medio en el sistema.md",
+    "3º 1er Semestre/MARP/Tema 9/9.2 Tareas con plazo fijo y beneficio.md",
+    "3º 1er Semestre/MARP/TEMA 9 SOLUCIONES VORACES.md",
+    "3º 1er Semestre/MARP/Tema 9",
+    "3º 1er Semestre/MARP/Tema 6/6.1 Conjuntos Disjuntos.md",
     "3º 1er Semestre/MARP/Tema 8/8.2 Problema de la mochila real.md",
     "3º 1er Semestre/MARP/Tema 8/8.1 Algoritmos voraces.md",
+    "3º 1er Semestre/MARP/Tema 8/Imágenes Tema 8",
     "3º 1er Semestre/MARP/TEMA 8 ALGORITMOS VORACES.md",
     "3º 1er Semestre/MARP/Tema 8",
-    "3º 1er Semestre/MARP/TEMA 9 SOLUCIONES VORACES.md",
-    "3º 1er Semestre/MARP/Tema 6/6.1 Conjuntos Disjuntos.md",
     "3º 1er Semestre/MARP/Tema 7/7.2 Caminos de coste mínimo.md",
     "3º 1er Semestre/SO/Tema 4 Memoria/HOJA 4.md",
     "3º 1er Semestre/SO/Tema 4 Memoria/4.3 Cache de páginas.md",
@@ -307,10 +254,8 @@
     "3º 1er Semestre/MARP/Tema 5/5.3 Detección de ciclos.md",
     "3º 1er Semestre/MARP/Tema 5/5.2 Ordenación topológica.md",
     "3º 1er Semestre/SO/Tema 2 Sistemas de Ficheros/HOJA 2.md",
-    "3º 1er Semestre/MARP/TEMA 5 GRAFOS DIRIGIDOS.md",
     "3º 1er Semestre/MARP/Tema 5/Imágenes Tema 5",
     "3º 1er Semestre/MARP/Tema 5",
-    "3º 1er Semestre/MARP/Tema 4/Imágenes Tema 4",
-    "3º 1er Semestre/MARP/Tema 4"
+    "3º 1er Semestre/MARP/Tema 4/Imágenes Tema 4"
   ]
 }
